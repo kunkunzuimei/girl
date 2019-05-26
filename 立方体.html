@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        body{
+            perspective: 1000px;
+        }
+        .mofang{
+            width: 200px;
+            height: 200px;
+            margin:300px auto;
+            transform-style:preserve-3d;
+            position: relative;
+
+            animation: donghua 4s infinite;
+        }
+        @keyframes donghua {
+            0%{
+                transform:rotate3d(1,1,0,0deg);
+            }
+            100%{
+                transform: rotate3d(1,1,0,360deg);
+            }
+        }
+        .dd{
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            left:0px;
+            top: 0px;
+            /*opacity: 0.6; 透明度*/
+            opacity: 0.7;
+            /*转换两种状态时过渡状态*/
+            transition:all 3s ;
+        }
+        .df{
+            background-image: url("img/美女13.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size:100% auto;
+
+            transform:translatez(100px);
+        }
+        .mofang:hover .df{
+            transform:translatez(200px);
+        }
+        .db{
+            background-image: url("img/美女2.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size:100% auto;
+
+            transform:translatez(-100px);
+        }
+        .mofang:hover .db{
+            transform:translatez(-200px);
+        }
+        .dl{
+            background-image: url("img/美女3.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size:100% auto;
+
+            transform:rotatey(90deg) translatez(100px);
+        }
+        .mofang:hover .dl{
+            transform:rotatey(90deg) translatez(200px);
+        }
+        .dr{
+            background-image: url("img/美女4.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size:100% auto;
+
+            transform:rotatey(-90deg) translatez(100px);
+        }
+        .mofang:hover .dr{
+            transform:rotatey(-90deg) translatez(200px);
+        }
+        .dt{
+            background-image: url("img/美女5.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size:100% auto;
+
+            transform:rotatex(90deg) translatez(100px);
+        }
+        .mofang:hover .dt{
+            transform:rotatex(90deg) translatez(200px);
+        }
+        .dx{
+            background-image: url("img/美女6.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size:100% auto;
+
+            transform:rotatex(-90deg) translatez(100px);
+        }
+        .mofang:hover .dx{
+            transform:rotatex(-90deg) translatez(200px);
+        }
+
+        .dd2{
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            top: 50px;;
+            left: 50px;
+            opacity: 0.7;
+            transition: all 2s;
+        }
+
+
+        .df2{
+            background-image: url("img/美女12.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 100% auto;
+
+            transform:translatez(50px);
+        }
+        .mofang:hover .df2{
+            transform:translatez(100px);
+        }
+        .db2{
+            background-image: url("img/美女12.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 100% auto;
+
+            transform:translatez(-50px);
+        }
+        .mofang:hover .db2{
+            transform:translatez(-100px);
+        }
+        .dl2{
+             background-image: url("img/美女12.jpg");
+             background-repeat: no-repeat;
+             background-position: center;
+             background-size: 100% auto;
+
+             transform:rotatey(90deg) translatez(50px);
+         }
+        .mofang:hover .dl2{
+            transform:rotatey(90deg) translatez(100px);
+        }
+        .dr2{
+            background-image: url("img/美女12.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 100% auto;
+
+            transform:rotatey(-90deg) translatez(50px);
+        }
+        .mofang:hover .dr2{
+            transform:rotatey(-90deg) translatez(100px);
+        }
+        .dt2{
+            background-image: url("img/美女12.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 100% auto;
+
+            transform:rotatex(90deg) translatez(50px);
+        }
+        .mofang:hover .dt2{
+            transform:rotatex(90deg) translatez(100px);
+        }
+        .dx2{
+            background-image: url("img/美女12.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 100% auto;
+
+            transform:rotatex(-90deg) translatez(50px);
+        }
+        .mofang:hover .dx2{
+            transform:rotatex(-90deg) translatez(100px);
+        }
+
+        .dd3{
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            top: 75px;;
+            left: 75px;
+            opacity: 0.7;
+            transition: all 1s;
+        }
+
+
+        .df3{
+            background-image: url("img/美女1.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 100% auto;
+
+            transform:translatez(25px);
+        }
+        /*.mofang:hover .df3{*/
+            /*transform:translatez(50px);*/
+        /*}*/
+        .db3{
+            background-image: url("img/美女1.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 100% auto;
+
+            transform:translatez(-25px);
+        }
+        /*.mofang:hover .db3{*/
+            /*transform:translatez(-50px);*/
+        /*}*/
+        .dl3{
+            background-image: url("img/美女1.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 100% auto;
+
+            transform:rotatey(90deg) translatez(25px);
+        }
+        /*.mofang:hover .dl3{*/
+            /*transform:rotatey(90deg) translatez(50px);*/
+        /*}*/
+        .dr3{
+            background-image: url("img/美女1.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 100% auto;
+
+            transform:rotatey(-90deg) translatez(25px);
+        }
+        /*.mofang:hover .dr3{*/
+            /*transform:rotatey(-90deg) translatez(50px);*/
+        /*}*/
+        .dt3{
+            background-image: url("img/美女1.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 100% auto;
+
+            transform:rotatex(90deg) translatez(25px);
+        }
+        /*.mofang:hover .dt3{*/
+            /*transform:rotatex(90deg) translatez(50px);*/
+        /*}*/
+        .dx3{
+            background-image: url("img/美女1.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 100% auto;
+
+            transform:rotatex(-90deg) translatez(25px);
+        }
+        /*.mofang:hover .dx3{*/
+            /*transform:rotatex(-90deg) translatez(50px);*/
+        /*}*/
+
+    </style>
+</head>
+<body>
+    <div class="mofang">
+        <div class="dd df"></div>
+        <div class="dd db"></div>
+        <div class="dd dl"></div>
+        <div class="dd dr"></div>
+        <div class="dd dt"></div>
+        <div class="dd dx"></div>
+
+        <div class="dd2 df2"></div>
+        <div class="dd2 db2"></div>
+        <div class="dd2 dl2"></div>
+        <div class="dd2 dr2"></div>
+        <div class="dd2 dt2"></div>
+        <div class="dd2 dx2"></div>
+
+        <div class="dd3 df3"></div>
+        <div class="dd3 db3"></div>
+        <div class="dd3 dl3"></div>
+        <div class="dd3 dr3"></div>
+        <div class="dd3 dt3"></div>
+        <div class="dd3 dx3"></div>
+    </div>
+</body>
+</html>
